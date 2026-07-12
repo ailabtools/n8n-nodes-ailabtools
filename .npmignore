@@ -1,0 +1,13 @@
+node_modules
+/.prettierrc
+/credentials
+/nodes
+/icons
+/.github
+.DS_Store
+.env
+*.tsbuildinfo
+eslint.config.mjs
+pnpm-workspace.yaml
+pnpm-lock.yaml
+tsconfig.json
