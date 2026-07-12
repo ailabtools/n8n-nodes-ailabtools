@@ -18,7 +18,10 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/ailabtools/n8n-nodes-ailabtools.git"
+        "url": "git+https://github.com/ailabtools/n8n-nodes-ailabtools.git"
+    },
+    "publishConfig": {
+        "access": "public"
     },
     "engines": {
         "node": ">=20.15"
