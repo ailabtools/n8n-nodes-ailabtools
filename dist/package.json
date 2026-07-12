@@ -1,6 +1,6 @@
 {
     "name": "n8n-nodes-ailabtools",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "n8n community node for AILabTools AI image and portrait APIs.",
     "license": "MIT",
     "packageManager": "pnpm@11.7.0",
