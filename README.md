@@ -75,20 +75,22 @@ Each request uses a 90-second timeout by default. You can change it with the **T
 
 ## Popular Use Cases
 
-| Popular API | Typical use case | n8n operation | File fields |
-| --- | --- | --- | --- |
-| [Universal Background Removal](https://www.ailabtools.com/docs/ai-cutout/general/universal-background-removal/api) | Remove product, portrait, or object backgrounds. | `Call Preset API` -> `Universal Background Removal` | `image` |
-| [Image Upscaler](https://www.ailabtools.com/docs/ai-image/enhance/image-lossless-enlargement/api) | Increase image resolution for ecommerce, media, or content workflows. | `Call Preset API` -> `Image Upscaler` | `image` |
-| [Remove Objects](https://www.ailabtools.com/docs/ai-image/editing/remove-objects/api) | Remove masked objects or defects from an image. | `Call Preset API` -> `Remove Objects` | `image`, `mask` |
-| [Face Analyzer](https://www.ailabtools.com/docs/ai-portrait/analysis/face-analyzer/api) | Detect faces and return facial attributes. | `Call Preset API` -> `Face Analyzer` | `image` |
-| [Skin Analyze Pro](https://www.ailabtools.com/docs/ai-portrait/analysis/skin-analysis-pro/api) | Analyze skin condition, pores, wrinkles, acne, tone, and texture. | `Call Preset API` -> `Skin Analyze Pro` | `image`, optional side images |
-| [Hairstyle Changer Pro](https://www.ailabtools.com/docs/ai-portrait/effects/hairstyle-editor-pro/api) | Generate hairstyle previews from portrait images. | `Call Preset API` -> `Hairstyle Changer Pro` | `image`, optional `mask` |
-| [Try on Clothes](https://www.ailabtools.com/docs/ai-portrait/editing/try-on-clothes/api) | Create virtual clothing try-on results. | `Call Preset API` -> `Try on Clothes` | `person_image`, `clothes_image` |
-| [Try on Clothes Pro](https://www.ailabtools.com/docs/ai-portrait/editing/try-on-clothes-pro/api) | Generate advanced outfit try-on results. | `Call Preset API` -> `Try on Clothes Pro` | `person_image`, `top_garment`, `bottom_garment` |
-| [AI Face Swap](https://www.ailabtools.com/docs/ai-portrait/editing/ai-face-swap/api) | Swap a face into a target image while preserving the scene. | `Call Preset API` -> `AI Face Swap` | `image_target`, `image_template` |
-| [Cartoon Yourself](https://www.ailabtools.com/docs/ai-portrait/effects/portrait-animation/api) | Create cartoon portraits and avatar images. | `Call Preset API` -> `Cartoon Yourself` | `image` |
+| Popular API | Typical use case | n8n operation | File fields | Try online |
+| --- | --- | --- | --- | --- |
+| [Universal Background Removal](https://www.ailabtools.com/docs/ai-cutout/general/universal-background-removal/api) | Remove product, portrait, or object backgrounds. | `Call Preset API` -> `Universal Background Removal` | `image` | [Try Background Removal online](https://www.ailabtools.com/background-removal) |
+| [Image Upscaler](https://www.ailabtools.com/docs/ai-image/enhance/image-lossless-enlargement/api) | Increase image resolution for ecommerce, media, or content workflows. | `Call Preset API` -> `Image Upscaler` | `image` | [Try Image Upscaler online](https://www.ailabtools.com/image-upscaler) |
+| [Remove Objects](https://www.ailabtools.com/docs/ai-image/editing/remove-objects/api) | Remove masked objects or defects from an image. | `Call Preset API` -> `Remove Objects` | `image`, `mask` | [Try Remove Objects online](https://www.ailabtools.com/image-remove-objects-example) |
+| [Face Analyzer](https://www.ailabtools.com/docs/ai-portrait/analysis/face-analyzer/api) | Detect faces and return facial attributes. | `Call Preset API` -> `Face Analyzer` | `image` | [Try Face Analyzer online](https://www.ailabtools.com/portrait-face-analyzer-example) |
+| [Skin Analyze Pro](https://www.ailabtools.com/docs/ai-portrait/analysis/skin-analysis-pro/api) | Analyze skin condition, pores, wrinkles, acne, tone, and texture. | `Call Preset API` -> `Skin Analyze Pro` | `image`, optional side images | [Try AI Skin Analyzer online](https://www.ailabtools.com/ai-skin-analyze) |
+| [Hairstyle Changer Pro](https://www.ailabtools.com/docs/ai-portrait/effects/hairstyle-editor-pro/api) | Generate hairstyle previews from portrait images. | `Call Preset API` -> `Hairstyle Changer Pro` | `image`, optional `mask` | [Try Hairstyle Changer online](https://www.ailabtools.com/hairstyle-changer) |
+| [Try on Clothes](https://www.ailabtools.com/docs/ai-portrait/editing/try-on-clothes/api) | Create virtual clothing try-on results. | `Call Preset API` -> `Try on Clothes` | `person_image`, `clothes_image` | [Try Virtual Clothes Try-On online](https://www.ailabtools.com/virtual-try-on-clothes) |
+| [Try on Clothes Pro](https://www.ailabtools.com/docs/ai-portrait/editing/try-on-clothes-pro/api) | Generate advanced outfit try-on results. | `Call Preset API` -> `Try on Clothes Pro` | `person_image`, `top_garment`, `bottom_garment` | [Try Virtual Clothes Try-On online](https://www.ailabtools.com/virtual-try-on-clothes) |
+| [AI Face Swap](https://www.ailabtools.com/docs/ai-portrait/editing/ai-face-swap/api) | Swap a face into a target image while preserving the scene. | `Call Preset API` -> `AI Face Swap` | `image_target`, `image_template` | [Try AI Face Swap online](https://www.ailabtools.com/face-swap) |
+| [Cartoon Yourself](https://www.ailabtools.com/docs/ai-portrait/effects/portrait-animation/api) | Create cartoon portraits and avatar images. | `Call Preset API` -> `Cartoon Yourself` | `image` | [Try Cartoon Yourself online](https://www.ailabtools.com/face-anime-converter) |
 
 Browse more demos in [AILabTools AI Portrait Tools](https://www.ailabtools.com/ai-portrait-tools) and [AILabTools AI Image Tools](https://www.ailabtools.com/ai-image-tools).
+
+[View the complete AILabTools n8n API index](docs/API_INDEX.md).
 
 ## Node Operations
 
@@ -187,6 +189,7 @@ The task query returns the AILabTools async task status and result payload.
 
 - [AILabTools API Documentation](https://www.ailabtools.com/docs)
 - [Get your AILabTools API key](https://www.ailabtools.com/developer)
+- [Complete AILabTools n8n API index](docs/API_INDEX.md)
 - [AILabTools Node.js SDK on npm](https://www.npmjs.com/package/ailabtools)
 - [AILabTools SDK on GitHub](https://github.com/ailabtools/ailabtools-sdk)
 - [n8n community node package on npm](https://www.npmjs.com/package/n8n-nodes-ailabtools)
