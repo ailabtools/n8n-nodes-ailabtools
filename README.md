@@ -73,6 +73,10 @@ The node uploads the binary file as multipart form data and returns the AILabToo
 
 Each request uses a 90-second timeout by default. You can change it with the **Timeout (Seconds)** field.
 
+## Example Workflows
+
+Import the [Hairstyle Changer Pro n8n demo](examples/hairstyle-changer-pro-demo.json) to see a complete workflow that reads a local portrait image, submits an async hairstyle task, polls until completion, downloads the generated image, and connects the AILabTools node as an AI Agent tool.
+
 ## Popular Use Cases
 
 | Popular API | Typical use case | n8n operation | File fields | Try online |

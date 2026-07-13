@@ -11,3 +11,9 @@ eslint.config.mjs
 pnpm-workspace.yaml
 pnpm-lock.yaml
 tsconfig.json
+.tmp-n8n-app
+.tmp-n8n-review
+.vscode
+review-video
+dist/review-video
+dist/tsconfig.tsbuildinfo

@@ -7,8 +7,9 @@ import type {
 	INodeProperties,
 	INodeType,
 	INodeTypeDescription,
+	JsonObject,
 } from 'n8n-workflow';
-import { NodeConnectionTypes, NodeOperationError } from 'n8n-workflow';
+import { NodeApiError, NodeConnectionTypes, NodeOperationError } from 'n8n-workflow';
 
 type PresetEndpoint = {
 	name: string;
@@ -640,7 +641,7 @@ export class AilabTools implements INodeType {
 					continue;
 				}
 
-				throw new NodeOperationError(this.getNode(), error as Error, { itemIndex });
+				throw new NodeApiError(this.getNode(), error as JsonObject, { itemIndex });
 			}
 		}
 

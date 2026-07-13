@@ -502,7 +502,7 @@ class AilabTools {
                     });
                     continue;
                 }
-                throw new n8n_workflow_1.NodeOperationError(this.getNode(), error, { itemIndex });
+                throw new n8n_workflow_1.NodeApiError(this.getNode(), error, { itemIndex });
             }
         }
         return [returnData];
